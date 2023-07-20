@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>Frontend Mentor | News homepage</title>
 
@@ -16,6 +17,9 @@
 
   <div id="container">
     <!-- NAVBAR -->
+
+
+
     <div id="navbar">
       <h1><img src="assets/images/logo.svg"><img></h1>
       <div id="nav-elements">
@@ -27,6 +31,24 @@
           <li>Categories</li>
         </ul>
       </div>
+
+      <div id="mobile-navbar">
+        <a href="index.html" class="icon">
+          <i class="fa fa-bars fa-2x" onclick="openMenu()"></i>
+        </a>
+      </div>
+
+      <div id="mobile-menu">
+        <i class="fa fa-times fa-3x" onclick="closeMenu()"></i>
+        <ul>
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </div>
+
     </div>
     <!-- Main Content -->
     <div class="main-content">
@@ -91,5 +113,7 @@
 
   </div>
 
+
+  <script src="script.js"></script>
 </body>
 </html>
