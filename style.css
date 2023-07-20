@@ -290,7 +290,7 @@ body {
     }
 
     #mobile-menu {
-        display: block;
+        display: none;
         width: 70%;
         height: 100vh;
         background-color: hsl(36, 100%, 99%);
