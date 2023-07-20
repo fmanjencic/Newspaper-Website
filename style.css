@@ -18,6 +18,12 @@ body {
 
 /* NAVBAR */
 
+a {
+    text-decoration: none;
+}
+
+
+
 #mobile-navbar {
     display: none;
 }
@@ -287,6 +293,11 @@ body {
         top: 22px;
         right: 20px;
         color: black;
+        transition: all 1s;
+    }
+
+    #mobile-navbar:hover {
+        transform: rotate(0.5turn)
     }
 
     #mobile-menu {
@@ -318,6 +329,10 @@ body {
 
     #mobile-menu li {
         display: block;    
+    }
+
+    #mobile-menu a:visited {
+        color: black;
     }
 
     .fa {

@@ -12,5 +12,17 @@ const openMenu = () => {
     x.style.display = "block";
 }
 
+const removeMobileIcon = () => {
+    let w = document.documentElement.clientWidth;
+    let y = document.getElementById('mobile-navbar');
+    if (w > 600) {
+        y.style.display = "none";
+    } else {
+        y.style.display = "block";
+    }
+}
+
+window.addEventListener("resize", removeMobileIcon)
+
 //On Load
 //closeMenu();
